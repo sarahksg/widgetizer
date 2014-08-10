@@ -1,0 +1,12 @@
+<div id="rss_feed">
+    <h4>{if="$main_title!==''"}{$main_title}{else}{/if}</h4>
+    <ul>
+
+        {loop="$item"}
+        <li><img src="{if="$value.image_url!=''"}{$value.image_url}{else}{if="$default_image!=''"}{$default_image}{else}http://local.digitalfirstmedia.com/common/dfm/assets/img/top-stories-rotator/default.jpg{/if}{/if}" style= " max-width:150px; max-height: 108px;"><a href="{$value.url}">{$value.title}</a>
+            <br/> <div id="rss_date">{$value.relative_date}</div>
+        </li>
+
+        {/loop}
+    </ul>
+</div>

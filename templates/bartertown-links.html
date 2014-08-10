@@ -1,0 +1,10 @@
+<div style="margin-top:10px;"> </div> <!-- Top Margin for Article links box -->
+<!--Widgetizer Bartertown-links template-->
+<div class="complexListingBox" style="width:290px; border-bottom:1px solid #DDDDDD; margin-left:3px;">	<!-- Grey border for Article Links Box -->
+    <h4>{if="$main_title!==''"}{$main_title}{else}Related{/if}</h4>
+    <ul class="pop">
+        {loop="$item"}
+        <li  class="listNoImage" "><a href="{$value.url}"  {if="$value.new_window=='y'"} target="_new" {else}{/if}  class="complexListingLink" >{$value.title}</a></li>
+        {/loop}
+    </ul>
+</div>

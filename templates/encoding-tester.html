@@ -1,0 +1,13 @@
+<div id="national_journal">
+    Opinion: While Washington Is Divided, America’s Mayors Are Leading the Way, and that Déjà vu thing 
+  <ul>
+{loop="item"}
+
+<li><a href="{$source}/{$siteID}/story/{$section}/{$value.guid}">{$value.title}</a>
+    <br/> <div class="nat-jour-timestamp">{$value.relative_date}</div>
+</li>
+
+{/loop}
+    </ul>
+
+</div>

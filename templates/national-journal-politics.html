@@ -1,0 +1,12 @@
+<div id="national_journal">
+  <ul>
+{loop="$item"}
+
+<li><a href="{$source}/{$siteID}/story/{$section}/{$value.guid}">{$value.title}</a>
+    <br/> <div class="nat-jour-timestamp">{$value.relative_date}</div>
+</li>
+
+{/loop}
+    </ul>
+
+</div>

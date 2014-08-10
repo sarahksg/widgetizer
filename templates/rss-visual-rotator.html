@@ -1,0 +1,42 @@
+<!-- Rotator JS required for widgets on article pages-->
+<script type="text/javascript" src="http://local.digitalfirstmedia.com/common/dfm/assets/js/jCarouselLite_1.0.1.min.js"></script>
+
+<!-- Initialize the rotator to show four items-->
+<script type="text/javascript">
+    $(document).ready(function() {
+        rotatorInt = setInterval(function() {
+            if ('jCarouselLite' in $("#popular-widget-large-carousel") && $('#popular-widget-items li').length > 1) {
+                $("#popular-widget-large-carousel").jCarouselLite({vertical: false, btnNext: "#popular-widget-large-forward", btnPrev: "#popular-widget-large-backward", speed: 550, scroll: 4, circular: true, visible: 4});
+                window.clearInterval(rotatorInt);
+            }
+        }, 500);
+    });
+</script>
+<!-- Show Widget Main Title inline styles required in list items -->
+<h4>{if="$main_title!==''"}{$main_title}{else}{/if}</h4>
+<div id="most-popular-rotator">  
+    <!-- Ann's Rotator container markup -->
+    <div id="popular-widget-container-large">
+        <div class="carousel slide three-image">
+            <div id="popular-widget-large-carousel" class="carousel-inner">
+                <div class="slide">	
+                    <div class="was-figure">	
+                        <ul id="popular-widget-items">	  
+                            <!--Get feed data -->
+                            {loop="$item"}
+                            <li class="item" style="float: left; width: 164px; height: 214px; list-style-type: none; overflow:hidden"><img src="{if="$value.image_url!=''"}{$value.image_url|newThumb:200}{else}{if="$default_image!=''"}{$default_image}{else}http://local.digitalfirstmedia.com/common/dfm/assets/img/top-stories-rotator/default.jpg{/if}{/if}" style= "width:90%; height:80%; max-width:150px; max-height: 108px;"><h3><a href="{$value.url}">{$value.title}</a>
+                                </h3></li>
+
+
+                            {/loop}
+
+                        </ul> <!--end popular widget items -->
+                    </div><!--end slide -->
+                </div><!--end was-figure -->
+            </div></div> <!--end large carousel -->
+
+        <a id="popular-widget-large-backward" class="carousel-control left">&lsaquo;</a>
+        <a id="popular-widget-large-forward"  class="carousel-control right">&rsaquo;</a>
+
+    </div>
+</div> 

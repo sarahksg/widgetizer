@@ -1,0 +1,11 @@
+<div id="rss_feed">
+  <ul>
+{loop="$item"}
+
+<li><a href="{$value.url}">{$value.title}</a>
+    <br/> <div id="rss_date">{$value.relative_date}</div>
+</li>
+
+{/loop}
+    </ul>
+</div>

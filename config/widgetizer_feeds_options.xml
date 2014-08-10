@@ -1,0 +1,648 @@
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<widgets>
+    <widget type="national_journal">
+        <config>
+            <url>/apps/widgetizer/widgetizer.php</url>
+            <intro_text><![CDATA[Use this page to build a RSS widget for your site.]]>
+            </intro_text>
+        </config>
+        <options>
+            <option>
+                <name>RSS Feed URL</name>
+                <short_name>feed</short_name>
+                <default>http://service.nationaljournal.com/Feed/dfm/9723529352359/olU2hrX5g</default>
+                <instructions>Enter the RSS feed URL</instructions>
+                <type>string</type>
+            </option>
+            <option>
+                <name>Template name</name>
+                <short_name>tpl</short_name>
+                <default>national-journal-politics</default>
+                <instructions>Enter the name of the template you would like to use.</instructions>
+                <type>string</type>
+                <required>yes</required>
+                <form_type>selection</form_type>
+                <!--Selections are needed if the form type is a drop-down menu-->
+                <selections>
+                    <selection value="national-journal-politics">National Journal</selection>
+                </selections>
+            </option>
+            <option>
+                <name>Number of items</name>
+                <short_name>num</short_name>
+                <default>5</default>
+                <instructions>Enter the number of items you would like to display.</instructions>
+                <type>numeric</type>
+                <required>yes</required>
+            </option>
+            <option>
+                <name>Site ID (used for domain)</name>
+                <short_name>siteID</short_name>
+                <default>twin-cities</default>
+                <instructions>Example: twin-cities</instructions>
+                <type>string</type>
+            </option>
+            <option>
+                <name>Section</name>
+                <short_name>section</short_name>
+                <default>thetrail</default>
+                <instructions>A string indicating the origin of a link within your section pages, will be used to target ads.</instructions>
+                <type>string</type>
+            </option>
+            <option>
+                <name>National Journal link domain</name>
+                <short_name>source</short_name>
+                <default>http://politics-news.nationaljournal.com</default>
+                <instructions>Put the correct domain name in (with http://)</instructions>
+                <type>url</type>
+                <required>yes</required>
+            </option>
+            <option>
+                <name>Template cache</name>
+                <short_name>tcache</short_name>
+                <default>120</default>
+                <instructions>How long the template should be cached, in minutes</instructions>
+                <type>numeric</type>
+            </option>
+            <option>
+                <name>Feed data cache</name>
+                <short_name>acache</short_name>
+                <default>120</default>
+                <instructions>How long the feed data should be cached, in minutes</instructions>
+                <type>numeric</type>
+            </option>
+            <option>
+                <name>Widget output</name>
+                <short_name>out</short_name>
+                <default>js</default>
+                <instructions>Output in Javascript (js) or HTML (html)</instructions>
+                <type>string</type>
+            </option>
+
+        </options>
+    </widget> 
+    <widget type="atlantic">
+        <config>
+            <url>/apps/widgetizer/widgetizer.php</url>
+            <intro_text><![CDATA[Use this page to build a RSS widget for your site.]]>
+            </intro_text>
+        </config>
+        <options>
+            <option>
+                <name>RSS Feed URL</name>
+                <short_name>feed</short_name>
+                <default>http://www.theatlanticwire.com/feeds/channels/politics/</default>
+                <instructions>Enter the RSS feed URL</instructions>
+                <type>string</type>
+            </option>
+            <option>
+                <name>Template name</name>
+                <short_name>tpl</short_name>
+                <default>rss</default>
+                <instructions>Enter the name of the template you would like to use.</instructions>
+                <type>string</type>
+                <required>yes</required>
+                <form_type>selection</form_type>
+                <!--Selections are needed if the form type is a drop-down menu-->
+                <selections>
+                    <selection>
+                        <value>rss</value>>
+                        <name>Generic RSS</name>
+                    </selection>
+                    <selection>
+                        <value>rss-with-image</value>
+                        <name>RSS with available image</name>
+                    </selection>
+                </selections>
+            </option>
+            <option>
+                <name>Number of items</name>
+                <short_name>num</short_name>
+                <default>5</default>
+                <instructions>Enter the number of items you would like to display.</instructions>
+                <type>numeric</type>
+                <required>yes</required>
+            </option>
+            <option>
+                <name>Site ID (used for domain)</name>
+                <short_name>siteID</short_name>
+                <default>twin-cities</default>
+                <instructions>Example: twin-cities</instructions>
+                <type>string</type>
+            </option>
+            <option>
+                <name>Section</name>
+                <short_name>section</short_name>
+                <default>thetrail</default>
+                <instructions>A string indicating the origin of a link within your section pages, will be used to target ads.</instructions>
+                <type>string</type>
+            </option>
+            <option>
+                <name>National Journal link domain</name>
+                <short_name>source</short_name>
+                <default>http://politics-news.nationaljournal.com</default>
+                <instructions>Put the correct domain name in (with http://)</instructions>
+                <type>url</type>
+                <required>yes</required>
+            </option>
+            <option>
+                <name>Template cache</name>
+                <short_name>tcache</short_name>
+                <default>120</default>
+                <instructions>How long the template should be cached, in minutes</instructions>
+                <type>numeric</type>
+            </option>
+            <option>
+                <name>Feed data cache</name>
+                <short_name>acache</short_name>
+                <default>120</default>
+                <instructions>How long the feed data should be cached, in minutes</instructions>
+                <type>numeric</type>
+            </option>
+            <option>
+                <name>Widget output</name>
+                <short_name>out</short_name>
+                <default>js</default>
+                <instructions>Output in Javascript (js) or HTML (html)</instructions>
+                <type>string</type>
+            </option>
+
+        </options>
+    </widget> 
+    <widget type="rss">
+        <config>
+            <url>/repos/widgetizer/widgetizer.php</url>
+            <intro_text><![CDATA[Use this page to build a RSS widget for your site.]]>
+            </intro_text>
+        </config>
+        <options>
+            <option>
+                <name>RSS Feed URL</name>
+                <short_name>feed</short_name>
+                <default>http://rss.nytimes.com/services/xml/rss/nyt/Technology.xml</default>
+                <instructions>Enter the RSS feed URL</instructions>
+                <type>string</type>
+            </option>
+            <option>
+                <name>Template </name>
+                <short_name>tpl</short_name>
+                <instructions>Select the type of the template you would like to use.</instructions>
+                <type>string</type>
+                <required>yes</required>
+                <form_type>selection</form_type>
+                <!--Selections are needed if the form type is a drop-down menu-->
+                <selections>
+                    <selection>
+                        <value>rss</value>
+                        <name>Generic RSS</name>
+                        <default>yes</default>
+                    </selection>
+                    <selection>
+                        <value>rss-with-image</value>
+                        <name>RSS with available image</name>
+                        <default>no</default>
+                    </selection>
+                    <selection>
+                        <value>rss-visual-rotator</value>
+                        <name>Visual Rotator with images</name>
+                        <default>no</default>
+                    </selection>
+                </selections>
+            </option>
+            <option>
+                <name>Number of items</name>
+                <short_name>num</short_name>
+                <default>5</default>
+                <instructions>Enter the number of items you would like to display.</instructions>
+                <type>numeric</type>
+                <required>yes</required>
+            </option>
+            <option>
+                <name>Main Title </name>
+                <short_name>main_title</short_name>
+                <default></default>
+                <instructions>(Optional) Enter a name for your content (could be used as a title) </instructions>
+                <type>string</type>
+                <required>no</required>
+            </option>
+            <option>
+                <name>Default image</name>
+                <short_name>defImg</short_name>
+                <default></default>
+                <instructions>(Optional) Enter a full path to a default image </instructions>
+                <type>string</type>
+                <required>no</required>
+            </option>
+            <option>
+            <name>Change source parameter in URL</name>
+            <short_name>qp</short_name>
+            <form_type>selection</form_type>
+            <selections>
+                <selection>
+                    <value></value>
+                    <name>Do not change source parameter in feed</name>
+                    <default>yes</default>
+                </selection>
+                <selection>
+                    <value>autofeed</value>
+                    <name>Use source=autofeed (for related items in right rail)</name>
+                    <default>no</default>
+                </selection>
+                <selection>
+                    <value>topstoriesrot</value>
+                    <name>Use source=topstoriesrot (for top stories rotator)</name>
+                    <default>no</default>
+                </selection>
+                <selection>
+                    <value>rightrailrelated</value>
+                    <name>Use source=rightrailrelated (for right rail related items)</name>
+                    <default>no</default>
+                </selection>
+            </selections>
+            <instructions>This can be used with analytics.</instructions>
+            <type>string</type>
+            <required>yes</required>
+        </option>
+        <option>
+            <name>Make URLs relative</name>
+            <short_name>rel</short_name>
+            <form_type>selection</form_type>
+            <selections>
+                <selection>
+                    <value>yes</value>>
+                    <name>Make URLs relative</name>
+                    <default>no</default>
+                </selection>
+                <selection>
+                    <value>no</value>
+                    <name>Leave URLs alone</name>
+                    <default>yes</default>
+                </selection>
+            </selections>
+            <default>no</default>
+            <instructions>This is good for sites that are sharing content.</instructions>
+            <type>string</type>
+            <required>yes</required>
+        </option>
+        <option>
+            <name>Make links open in a new window</name>
+            <short_name>targ</short_name>
+            <form_type>selection</form_type>
+            <selections>
+                <selection>
+                    <value>y</value>
+                    <name>Open links in a new window</name>
+                    <default>no</default>
+                </selection>
+                <selection>
+                    <value>n</value>
+                    <name>Open links in the same window</name>
+                    <default>yes</default>
+                </selection>
+            </selections>
+            <default>no</default>
+            <instructions>This is good for links to external sites, like blogs.</instructions>
+            <type>string</type>
+            <required>yes</required>
+        </option>
+        <option>
+            <name>Template cache</name>
+            <short_name>tcache</short_name>
+            <instructions>How long the template should be cached, in minutes (you can clear the cache when testing a template.  See the instructions)</instructions>
+              <form_type>selection</form_type>
+            <selections>
+                <selection>
+                    <value>5</value>
+                    <name>Template refreshed every 5 minutes</name>
+                    <default>no</default>
+                </selection>
+                <selection>
+                    <value>10</value>
+                    <name>Template refreshed every 10 minutes</name>
+                    <default>yes</default>
+                </selection>
+                <selection>
+                    <value>30</value>
+                    <name>Template refreshed every 30 minutes</name>
+                    <default>no</default>
+                </selection>
+                <selection>
+                    <value>60</value>
+                    <name>Template refreshed every 60 minutes</name>
+                    <default>no</default>
+                </selection>
+                  <selection>
+                    <value>120</value>
+                    <name>Template refreshed every 120 minutes</name>
+                    <default>no</default>
+                </selection>
+                <selection>
+                    <value>1440</value>
+                    <name>Template refreshed every day</name>
+                    <default>no</default>
+                </selection>
+            </selections>
+        </option>
+        <option>
+            <name>Feed data cache</name>
+            <short_name>acache</short_name>
+                        <form_type>selection</form_type>
+            <instructions>How long the feed data should be cached, in minutes (you can clear the cache when testing a template.  See the instructions)</instructions>
+                        <selections>
+                <selection>
+                    <value>5</value>
+                    <name>Data refreshed every 5 minutes</name>
+                    <default>no</default>
+                </selection>
+                <selection>
+                    <value>10</value>
+                    <name>Data refreshed every 10 minutes</name>
+                    <default>yes</default>
+                </selection>
+                <selection>
+                    <value>30</value>
+                    <name>Data refreshed every 30 minutes</name>
+                    <default>no</default>
+                </selection>
+                <selection>
+                    <value>60</value>
+                    <name>Data refreshed every 60 minutes</name>
+                    <default>no</default>
+                </selection>
+                  <selection>
+                    <value>120</value>
+                    <name>Data refreshed every 120 minutes</name>
+                    <default>no</default>
+                </selection>
+                <selection>
+                    <value>1440</value>
+                    <name>Data refreshed every day</name>
+                    <default>no</default>
+                </selection>
+            </selections>
+        </option>
+        <option>
+            <name>Widget output</name>
+            <short_name>out</short_name>
+            <default>js</default>
+            <instructions>Output in Javascript (js) or HTML (html)</instructions>
+            <form_type>selection</form_type>
+            <selections>
+                <selection>
+                    <value>js</value>
+                    <name>Javascript</name>
+                    <default>yes</default>
+                </selection>
+                <selection>
+                    <value>html</value>
+                    <name>HTML format</name>
+                    <default>no</default>
+                </selection>
+            </selections>
+            <type>string</type>
+        </option>
+
+        </options>
+    </widget> 
+    <widget type="dfm_rss">
+        <config>
+            <url>/apps/widgetizer/widgetizer.php</url>
+            <intro_text><![CDATA[Use this page to build a RSS widget for your site.]]>
+            </intro_text>
+        </config>
+        <options>
+            <option>
+                <name>RSS Feed URL</name>
+                <short_name>feed</short_name>
+                <default>http://rss.nytimes.com/services/xml/rss/nyt/Technology.xml</default>
+                <instructions>Enter the RSS feed URL</instructions>
+                <type>string</type>
+            </option>
+            <option>
+                <name>Template </name>
+                <short_name>tpl</short_name>
+                <instructions>Select the type of the template you would like to use.</instructions>
+                <type>string</type>
+                <required>yes</required>
+                <form_type>selection</form_type>
+                <!--Selections are needed if the form type is a drop-down menu-->
+                <selections>
+                    <selection>
+                        <value>rss</value>
+                        <name>Generic RSS</name>
+                        <default>yes</default>
+                    </selection>
+                    <selection>
+                        <value>rss-with-image</value>
+                        <name>RSS with available image</name>
+                        <default>no</default>
+                    </selection>
+                    <selection>
+                        <value>bartertown-links</value>
+                        <name>Widget for Bartertown's Right Rail</name>
+                        <default>no</default>
+                    </selection>
+                    <selection>
+                        <value>rss-visual-rotator</value>
+                        <name>Visual Rotator with images</name>
+                        <default>no</default>
+                    </selection>
+                </selections>
+            </option>
+            <option>
+                <name>Number of items</name>
+                <short_name>num</short_name>
+                <default>5</default>
+                <instructions>Enter the number of items you would like to display.</instructions>
+                <type>numeric</type>
+                <required>yes</required>
+            </option>
+            <option>
+                <name>Main Title </name>
+                <short_name>main_title</short_name>
+                <default></default>
+                <instructions>(Optional) Enter a name for your content (could be used as a title) </instructions>
+                <type>string</type>
+                <required>no</required>
+            </option>
+            <option>
+                <name>Default image</name>
+                <short_name>defImg</short_name>
+                <default></default>
+                <instructions>(Optional) Enter a full path to a default image </instructions>
+                <type>string</type>
+                <required>no</required>
+            </option>
+            <option>
+            <name>Change source parameter in URL</name>
+            <short_name>qp</short_name>
+            <form_type>selection</form_type>
+            <selections>
+                <selection>
+                    <value></value>
+                    <name>Do not change source parameter in feed</name>
+                    <default>yes</default>
+                </selection>
+                <selection>
+                    <value>autofeed</value>
+                    <name>Use source=autofeed (for related items in right rail)</name>
+                    <default>no</default>
+                </selection>
+                <selection>
+                    <value>topstoriesrot</value>
+                    <name>Use source=topstoriesrot (for top stories rotator)</name>
+                    <default>no</default>
+                </selection>
+                <selection>
+                    <value>rightrailrelated</value>
+                    <name>Use source=rightrailrelated (for right rail related items)</name>
+                    <default>no</default>
+                </selection>
+            </selections>
+            <instructions>This can be used with analytics.</instructions>
+            <type>string</type>
+            <required>yes</required>
+        </option>
+        <option>
+            <name>Make URLs relative</name>
+            <short_name>rel</short_name>
+            <form_type>selection</form_type>
+            <selections>
+                <selection>
+                    <value>yes</value>>
+                    <name>Make URLs relative</name>
+                    <default>no</default>
+                </selection>
+                <selection>
+                    <value>no</value>
+                    <name>Leave URLs alone</name>
+                    <default>yes</default>
+                </selection>
+            </selections>
+            <default>no</default>
+            <instructions>This is good for NGPS sites that are sharing content.</instructions>
+            <type>string</type>
+            <required>yes</required>
+        </option>
+        <option>
+            <name>Make links open in a new window</name>
+            <short_name>targ</short_name>
+            <form_type>selection</form_type>
+            <selections>
+                <selection>
+                    <value>y</value>
+                    <name>Open links in a new window</name>
+                    <default>no</default>
+                </selection>
+                <selection>
+                    <value>n</value>
+                    <name>Open links in the same window</name>
+                    <default>yes</default>
+                </selection>
+            </selections>
+            <default>no</default>
+            <instructions>This is good for links to external sites, like blogs.</instructions>
+            <type>string</type>
+            <required>yes</required>
+        </option>
+        <option>
+            <name>Template cache</name>
+            <short_name>tcache</short_name>
+            <instructions>How long the template should be cached, in minutes (you can clear the cache when testing a template.  See the instructions)</instructions>
+              <form_type>selection</form_type>
+            <selections>
+                <selection>
+                    <value>5</value>
+                    <name>Template refreshed every 5 minutes</name>
+                    <default>no</default>
+                </selection>
+                <selection>
+                    <value>10</value>
+                    <name>Template refreshed every 10 minutes</name>
+                    <default>yes</default>
+                </selection>
+                <selection>
+                    <value>30</value>
+                    <name>Template refreshed every 30 minutes</name>
+                    <default>no</default>
+                </selection>
+                <selection>
+                    <value>60</value>
+                    <name>Template refreshed every 60 minutes</name>
+                    <default>no</default>
+                </selection>
+                  <selection>
+                    <value>120</value>
+                    <name>Template refreshed every 120 minutes</name>
+                    <default>no</default>
+                </selection>
+                <selection>
+                    <value>1440</value>
+                    <name>Template refreshed every day</name>
+                    <default>no</default>
+                </selection>
+            </selections>
+        </option>
+        <option>
+            <name>Feed data cache</name>
+            <short_name>acache</short_name>
+                        <form_type>selection</form_type>
+            <instructions>How long the feed data should be cached, in minutes (you can clear the cache when testing a template.  See the instructions)</instructions>
+                        <selections>
+                <selection>
+                    <value>5</value>
+                    <name>Data refreshed every 5 minutes</name>
+                    <default>no</default>
+                </selection>
+                <selection>
+                    <value>10</value>
+                    <name>Data refreshed every 10 minutes</name>
+                    <default>yes</default>
+                </selection>
+                <selection>
+                    <value>30</value>
+                    <name>Data refreshed every 30 minutes</name>
+                    <default>no</default>
+                </selection>
+                <selection>
+                    <value>60</value>
+                    <name>Data refreshed every 60 minutes</name>
+                    <default>no</default>
+                </selection>
+                  <selection>
+                    <value>120</value>
+                    <name>Data refreshed every 120 minutes</name>
+                    <default>no</default>
+                </selection>
+                <selection>
+                    <value>1440</value>
+                    <name>Data refreshed every day</name>
+                    <default>no</default>
+                </selection>
+            </selections>
+        </option>
+        <option>
+            <name>Widget output</name>
+            <short_name>out</short_name>
+            <default>js</default>
+            <instructions>Output in Javascript (js) or HTML (html)</instructions>
+            <form_type>selection</form_type>
+            <selections>
+                <selection>
+                    <value>js</value>
+                    <name>Javascript</name>
+                    <default>yes</default>
+                </selection>
+                <selection>
+                    <value>html</value>
+                    <name>HTML format</name>
+                    <default>no</default>
+                </selection>
+            </selections>
+            <type>string</type>
+        </option>
+
+        </options>
+    </widget> 
+
+</widgets>
