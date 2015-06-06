@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 Widgetizer tool
 ==========
 
@@ -13,9 +13,4 @@ The PHP-built widgetizer will build widgets from feeds and output them appropria
 Documentation and examples here:
 http://sarah.stapleton-gray.org/projects/widgetizer/
 
-=======
-widgetizer
-==========
 
-Widgetizer - easily create widgets for a site
->>>>>>> 32673582cb993cfa5a6c9e20bf8337ea4784ca05

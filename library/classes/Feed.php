@@ -20,7 +20,16 @@ class Feed {
     public $feed_data;
 
     public function setFeeds($urls) {
-        $this->feeds = $urls;
+        //remove spaces
+        $urls = preg_replace('/\s+/', '', $urls);
+        if (strpos($urls,"||")) { 
+            //there are multiple feeds, separated by the double pipe
+            //so put them into an array
+            $urls_array = explode("||", $urls);
+            $feeds=$urls_array;
+        }
+        else {$feeds=$urls;}
+        $this->feeds = $feeds;
         //could be an array or a single feed
     }
 

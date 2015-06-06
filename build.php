@@ -21,7 +21,7 @@ try {
     }// get the widget type from the form 
 
     if (!$type) {
-        echo("A widget type must be defined.  Use type=<name of widget type>.  Example: <a href='" . htmlentities($_SERVER['PHP_SELF']) . "?type=national_journal'>" . htmlentities($_SERVER['PHP_SELF']) . "?type=national_journal</a>");
+        echo("A widget type must be defined.  Use type=<name of widget type>.  Example: <a href='" . htmlentities($_SERVER['PHP_SELF']) . "?type=rss'>" . htmlentities($_SERVER['PHP_SELF']) . "?type=rss</a>");
         //return FALSE;
         die;
     } else {

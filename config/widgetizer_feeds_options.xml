@@ -171,7 +171,7 @@
     </widget> 
     <widget type="rss">
         <config>
-            <url>/repos/widgetizer/widgetizer.php</url>
+            <url>/widgetizer/widgetizer.php</url>
             <intro_text><![CDATA[Use this page to build a RSS widget for your site.]]>
             </intro_text>
         </config>
@@ -179,8 +179,8 @@
             <option>
                 <name>RSS Feed URL</name>
                 <short_name>feed</short_name>
-                <default>http://rss.nytimes.com/services/xml/rss/nyt/Technology.xml</default>
-                <instructions>Enter the RSS feed URL</instructions>
+                <default>http://rss.cnn.com/rss/cnn_topstories.rss||http://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml</default>
+                <instructions>Enter the RSS feed URL.  If you would like to use multiple feeds, separate them with a double pipe -- ||.</instructions>
                 <type>string</type>
             </option>
             <option>
